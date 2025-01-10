@@ -4,7 +4,7 @@ import Colors from './tabs/colors'
 
 
 
-function MainPage() {
+function HomePage() {
     return (
         <View style={styles.container}>
             <Text style={styles.text}> Frank Ocean get in the studio please </Text>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default MainPage;
+export default HomePage;
