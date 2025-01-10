@@ -4,7 +4,7 @@ import Colors from './tabs/colors'
 
 
 
-function mainPage() {
+function MainPage() {
     return (
         <View style={styles.container}>
             <Text style={styles.text}> Frank Ocean get in the studio please </Text>
@@ -18,4 +18,4 @@ function mainPage() {
 
 }
 
-export default mainPage 
+export default MainPage 
