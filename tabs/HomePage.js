@@ -20,6 +20,7 @@ function HomePage() {
 const styles = StyleSheet.create({
     text: {
         fontWeight: 'bold',
+        justifyContent: 'space-between'
     }
 })
 
