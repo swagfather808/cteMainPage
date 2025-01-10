@@ -1,0 +1,21 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image, Buttons } from 'react-native';
+import Colors from './tabs/colors'
+
+
+
+function mainPage() {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}> Frank Ocean get in the studio please </Text>
+            <StatusBar style="auto" />
+            <Image
+                style={styles.image1}
+                source={require('./assets/icon.png')}
+            />
+        </View>
+    )
+
+}
+
+export default mainPage 
