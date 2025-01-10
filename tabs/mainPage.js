@@ -21,7 +21,7 @@ function MainPage() {
 const styles = StyleSheet.create({
     text: {
         fontWeight: 'bold',
-     }
+    }
 })
 
 export default MainPage;
