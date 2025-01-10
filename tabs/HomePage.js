@@ -10,7 +10,7 @@ function HomePage() {
             <StatusBar style="auto" />
             <Image
                 style={styles.image1}
-                source={require('./assets/icon.png')}
+                source={require('../assets/icon.png')}
             />
         </View>
     )
