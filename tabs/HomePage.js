@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Buttons } from 'react-native';
+import { StyleSheet, Text, View, Image, Buttons, TextInput } from 'react-native';
+import Colors from './Colors'
 
 
 
 function HomePage() {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}> Frank Ocean get in the studio please </Text>
+            
             <StatusBar style="auto" />
-            <Image
-                style={styles.image1}
-                source={require('../assets/icon.png')}
-            />
         </View>
     )
 
@@ -20,8 +17,18 @@ function HomePage() {
 const styles = StyleSheet.create({
     text: {
         fontWeight: 'bold',
-        justifyContent: 'space-between'
-    }
+    },
+
+    container:{
+        backgroundColor: Colors.charcoal
+    },
+
+    image1: {
+        height: 200, 
+        width: 200, 
+    },
+
+    
 })
 
 export default HomePage;

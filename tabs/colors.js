@@ -16,4 +16,4 @@ const Colors = {
     charcoal: '#264653',
 }
 
-export default Colors
+export default Colors;
