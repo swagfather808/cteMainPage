@@ -1,9 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Buttons, TextInput, Pressable } from 'react-native';
+import { useState } from 'react'
 import Colors from './Colors'
+
+const [buttonImage1, setButtonImage1] = useState('')
+const [buttonText1, setButtontext1] = useState('Home')
 
 function button1() {
     console.log('button1')
+    setButtonImage1('../assets/wrench.png')
 }
 
 function button2() {
@@ -43,13 +48,29 @@ function HomePage() {
                     style={styles.searchbar}
                     placeholder='Find your course!'
                 />
+            </View>
 
+            <View style={styles.imageContainer}>
                 <Image
-                    style={styles.image1}
-                    source={require('../assets/magnifyingGlass.png')}
+                    style={styles.bottomImage1}
+                    source={require('../assets/blackguy-suit.png')}
                 />
 
+                <Image
+                    style={styles.bottomImage2}
+                    source={require('../assets/mechanic.png')}
+                />
+
+                <Image
+                    style={styles.bottomImage3}
+                    source={require('../assets/engineer.png')}
+                />
+
+
             </View>
+
+
+
         </View>
 
     )
@@ -102,12 +123,37 @@ const styles = StyleSheet.create({
     },
 
     searchbarContainer: {
+        flex: 1,
         alignItems: 'center'
     },
 
-    searchbarImage: {
-
+    imageContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
     },
+
+    bottomImage1: {
+        backgroundColor: Colors.chineseViolet,
+        borderWidth: 4,
+        height: 425,
+        width: 300,
+    },
+
+    bottomImage2: {
+        backgroundColor: Colors.chineseViolet,
+        borderWidth: 4,
+        height: 425,
+        width: 300,
+    },
+
+    bottomImage3: {
+        backgroundColor: Colors.chineseViolet,
+        borderWidth: 4,
+        height: 425,
+        width: 300,
+    },
+
+
 
 })
 
