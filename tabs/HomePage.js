@@ -16,30 +16,40 @@ function button3() {
 
 function HomePage() {
     return (
-        
-        <View style={styles.container}>
-            <Text style={styles.moanaluaHeader}>Moanalua High School CTE Department  </Text>
+        <View style={styles.basePage}>
+            <View style={styles.headerContainer}>
+                <Text style={styles.moanaluaHeader}>Moanalua High School CTE Department  </Text>
 
-            <Image
+                <Image
                     style={styles.image1}
                     source={require('../assets/favicon.png')}
                 />
 
-            <Pressable onPress={button1} >
-                <Text style={styles.barText}>| Home |</Text>
-            </Pressable>
+                <Pressable onPress={button1} >
+                    <Text style={styles.barText}>| Home |</Text>
+                </Pressable>
 
-            <Pressable onPress={button2}>
-                <Text style={styles.barText}> FAQ |</Text>
-            </Pressable>
+                <Pressable onPress={button2}>
+                    <Text style={styles.barText}> FAQ |</Text>
+                </Pressable>
 
-            <Pressable onPress={button3}>
-                <Text style={styles.barText}> Teachers | </Text>
-            </Pressable>
+                <Pressable onPress={button3}>
+                    <Text style={styles.barText}> Teachers | </Text>
+                </Pressable>
+            </View>
 
-           
-         
-                
+            <View style={styles.searchbarContainer}>
+                <TextInput
+                    style={styles.searchbar}
+                    placeholder='Find your course!'
+                />
+
+                <Image
+                    style={styles.image1}
+                    source={require('../assets/magnifyingGlass.png')}
+                />
+
+            </View>
         </View>
 
     )
@@ -64,17 +74,39 @@ const styles = StyleSheet.create({
         borderRadius: 4,
     },
 
-    container: {
+    headerContainer: {
         flex: 1,
         flexDirection: 'row',
-        borderWidth: 13,
-        backgroundColor: Colors.sandyBrown  ,
+        borderWidth: 11,
         alignItems: 'center',
+    },
+
+    basePage: {
+        backgroundColor: Colors.burntSienna
     },
 
     image1: {
         height: 100,
         width: 100,
+    },
+
+    searchbar: {
+        textAlign: 'center',
+        fontSize: 30,
+        marginTop: 10,
+        fontWeight: 'bold',
+        borderWidth: 4,
+        width: 500,
+        height: 75,
+        borderRadius: 100,
+    },
+
+    searchbarContainer: {
+        alignItems: 'center'
+    },
+
+    searchbarImage: {
+
     },
 
 })
