@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image, Buttons, TextInput, Pressable } from 're
 import { useState } from 'react'
 import Colors from './Colors'
 
-const [buttonImage1, setButtonImage1] = useState('')
-const [buttonText1, setButtontext1] = useState('Home')
+//const [buttonImage1, setButtonImage1] = useState('')
+//1const [buttonText1, setButtontext1] = useState('Home')
 
 function button1() {
     console.log('button1')
