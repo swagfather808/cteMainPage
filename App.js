@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Buttons} from 'react-native'; 
-import HomePage from './tabs/HomePage.js';
+import NomePage from './app/index.js';
 
 
 
 export default function App() {
   return (
     <View>
-      <HomePage />
+      <NomePage />
     </View>
   );  
 }
