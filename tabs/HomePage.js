@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Buttons, TextInput, Pressable } from 'react-native';
 import { useState } from 'react'
-import Colors from './Colors'
+import Colors from './colors'
 
 //const [buttonImage1, setButtonImage1] = useState('')
 //1const [buttonText1, setButtontext1] = useState('Home')
